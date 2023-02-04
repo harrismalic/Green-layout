@@ -4,13 +4,12 @@
 }
 
 .container {
-    width: 80%;
+    width: 70%;
     margin: 0px auto;
 }
 
 .main-header {
     background-color: #151515;
-
     color: white;
 }
 
@@ -45,27 +44,256 @@
     list-style: none;
     margin-right: 20px;
 }
-.section-one-image{
+
+.section-one-image {
     background-image: url(../images/banner.jpg);
     background-size: cover;
     color: white;
-    height: 400px;
-    padding-top: 80px;
+    height: 378px;
+    padding-top: 164px;
 }
-.section-one-image h1{
+
+.section-one-image h1 {
     font-size: 60px;
     font-weight: 100;
     margin-bottom: 10px;
 }
-.section-one-image h3{
+
+.section-one-image h3 {
     font-size: 20px;
     margin-bottom: 20px;
     font-weight: 100;
 }
-.section-one-image button{
+
+.section-one-image button {
     background-color: green;
     color: white;
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
+}
+
+.skill-item {
+    float: left;
+    width: 31%;
+    margin-right: 3%;
+    text-align: center;
+    /* padding-right: 40px; */
+    box-sizing: border-box;
+    /* padding-left: 40px; */
+}
+
+.skill-item:nth-child(3) {
+    margin: 0%;
+}
+
+.skill-item p {
+
+    width: 80%;
+    margin: 0 auto;
+    color: #a9a9a9;
+
+}
+
+.skill-container {
+    margin-top: 70px;
+    margin-bottom: 70px;
+}
+
+.skill-item h3 {
+    color: #a9a9a9;
+    margin-bottom: 10px;
+}
+
+.inner-line {
+    position: relative;
+    text-align: center;
+}
+
+.inner-line button {
+    padding: 15px 40px;
+    background-color: green;
+    color: white;
+    position: absolute;
+    top: -47px;
+    left: 40%;
+    border: 23px solid #fff;
+    font-weight: 600;
+    width: 305px;
+}
+
+.testimonials-container {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.testimonial-image {
+    float: left;
+    width: 30%;
+    text-align: center;
+}
+
+.testimonial-right-side {
+    float: right;
+    width: 70%;
+    text-align: center;
+}
+
+.testimonial-right-side img {
+    margin-top: 40px;
+    margin-bottom: 10px;
+}
+
+.testimonial-right-side p {
+    color: #a9a9a9;
+}
+
+.footer-left-side {
+    float: left;
+    width: 60%;
+}
+
+.main-footer {
+    height: 250px;
+    padding-top: 70px;
+    margin-bottom: 50px;
+}
+
+.footer-right-side {
+    float: right;
+    width: 40%;
+    text-align: right;
+}
+
+.contact-info img {
+    float: left;
+    margin-right: 5px;
+}
+
+.contact-info p {
+    float: left;
+    margin-top: 7px;
+    color: #a9a9a9;
+}
+
+.contact-info {
+    margin-bottom: 5px
+}
+
+.social-icon {
+    margin-top: 100px;
+}
+
+@media (max-width: 1280px) {
+    .inner-line button {
+        left: 34%;
+    }
+
+    .testimonial-right-side p {
+        text-align: center;
+        color: #a9a9a9;
+        width: 96%;
+        padding: 0 30px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .navigation {
+        float: none;
+        width: 100%;
+        padding-top: 25px;
+        box-sizing: border-box;
+        padding-bottom: 25px;
+    }
+
+    .logo {
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+
+    .navigation ul {
+        width: fit-content;
+        margin: 0 auto;
+    }
+    .skill-item{
+        float: none;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .inner-line button{
+        left: 28%;
+    }
+    .testimonial-image{
+        float: none;
+        width: 100%;
+    }
+    .testimonial-right-side{
+        float: none;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+@media (max-width: 768px){
+    .navigation ul{
+        padding: 0;
+    }
+    .navigation ul li{
+        margin-right: 11px;
+    }
+    .inner-line button{
+        left: 21%;
+    }
+    .footer-right-side p{
+        width: unset !important;
+        padding: 0 !important;
+    }
+    .testimonial-right-side p {
+        text-align: center;
+        color: #a9a9a9;
+        width: 100%;
+        padding: 0;
+        margin-left: -1px;
+    }
+}
+@media(max-width: 480px){
+    .sub-header{
+        padding: 0px;
+    }
+    .section-one-image h1{
+        font-size: 44px;
+    }
+    .section-one-image h3{
+        font-size: 14px;
+        line-height: 24px;
+    }
+    .section-one-image{
+        height: 299px;
+        padding-top: 101px;
+    }
+    .inner-line button{
+        left: 12%;
+        width: 250px;
+        padding: 0px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        top: -40px;
+    }
+    
+    .footer-left-side {
+        float: none;
+        width: 100%;
+    }
+    .footer-right-side{
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+    .social-icon{
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+    .main-footer{
+        text-align: center;
+    }
 }
